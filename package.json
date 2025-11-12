@@ -10,6 +10,8 @@
     "build": "bun run --filter '*' build",
     "build:all": "bun run --filter './resources/**' build",
     "build:core": "bun run --filter '@noverna/core' build",
+    "db:migrate": "bun run --filter '@noverna/database' migrate",
+    "db:generate": "bun run --filter '@noverna/database' generate",
     "dev": "bun run --filter '*' dev",
     "clean": "rm -rf **/node_modules **/dist",
     "install:all": "bun install"

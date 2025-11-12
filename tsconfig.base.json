@@ -16,8 +16,10 @@
     "isolatedModules": false,
     "baseUrl": ".",
     "paths": {
-      "@noverna/*": ["packages/*/src"],
-      "@noverna/*/dist": ["packages/*/dist"],
+      "@noverna/database": ["packages/noverna-database/src"],
+      "@noverna/cache": ["packages/noverna-cache/src"],
+      "@noverna/common": ["packages/noverna-common/src"],
+      "@noverna/config": ["packages/noverna-config/src"],
       "@shared/*": ["packages/shared/*"]
     },
     "types": ["@citizenfx/server", "bun-types", "node"]

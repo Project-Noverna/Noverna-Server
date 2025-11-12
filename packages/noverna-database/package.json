@@ -1,0 +1,23 @@
+{
+  "name": "@noverna/database",
+  "module": "./src/index.ts",
+  "type": "module",
+  "scripts": {
+    "migrate": "bunx drizzle-kit migrate",
+    "generate": "bunx drizzle-kit generate"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/pg": "^8.15.6",
+    "drizzle-kit": "^0.31.6",
+    "tsx": "^4.20.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.44.7",
+    "pg": "^8.16.3"
+  }
+}

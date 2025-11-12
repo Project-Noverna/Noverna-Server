@@ -1,0 +1,1 @@
+CREATE INDEX "accounts_session_idx" ON "accounts" USING btree ("is_active");

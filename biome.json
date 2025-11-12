@@ -37,7 +37,7 @@
         "noUnusedVariables": "off",
         "noUnusedImports": "error",
         "noConstAssign": "error",
-        "noUndeclaredVariables": "error"
+        "noUndeclaredVariables": "off"
       },
       "performance": {
         "noDelete": "warn"

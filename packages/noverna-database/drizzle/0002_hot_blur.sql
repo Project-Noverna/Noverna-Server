@@ -1,0 +1,1 @@
+CREATE INDEX "accounts_whitelist_idx" ON "accounts" USING btree ("is_active");

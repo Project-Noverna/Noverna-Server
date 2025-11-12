@@ -1,6 +1,8 @@
 fx_version 'cerulean'
 game 'gta5'
 
+node_version '22'
+
 name 'noverna-core'
 author 'Noverna'
 version '1.0.0'

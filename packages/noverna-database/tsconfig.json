@@ -1,0 +1,7 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["@citizenfx/server", "@types/pg", "drizzle-orm"]
+  },
+  "include": ["./**/*.ts"]
+}
