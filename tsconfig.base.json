@@ -3,7 +3,7 @@
     "target": "es2022",
     "module": "commonjs",
     "lib": ["es2022"],
-    "moduleResolution": "node",
+    "moduleResolution": "node10",
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -20,6 +20,7 @@
       "@noverna/cache": ["packages/noverna-cache/src"],
       "@noverna/common": ["packages/noverna-common/src"],
       "@noverna/config": ["packages/noverna-config/src"],
+      "@noverna/logger": ["packages/noverna-logger/src"],
       "@shared/*": ["packages/shared/*"]
     },
     "types": ["@citizenfx/server", "bun-types", "node"]
