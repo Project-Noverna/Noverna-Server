@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Typecheck (core)
+        run: bun run --filter "@noverna/core" typecheck
+
+      - name: Build all
+        run: bun run build
+
+      - name: Biome check
+        run: bunx --bun biome check .
+
+      - name: Upload build artifacts (core)
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: noverna-core-build
+          path: resources/noverna-core/build
+          if-no-files-found: warn

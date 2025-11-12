@@ -1,0 +1,40 @@
+name: Feature request
+description: Propose a new capability or improvement.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your idea! Please describe the problem and the proposed solution.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem are you trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: How should we solve it? Include alternatives.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is in-scope and out-of-scope?
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact and risks
+      description: Security, performance, or breaking-change risks.
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I am willing to help implement this
+        - label: This change does not reduce transparency or auditability
+          required: true
