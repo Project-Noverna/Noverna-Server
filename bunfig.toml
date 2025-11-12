@@ -1,0 +1,6 @@
+# bunfig.toml - Bun Configuration
+[install]
+# Schnellere installs
+exact = false
+# Peer dependencies
+peer = true

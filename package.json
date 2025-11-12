@@ -1,0 +1,28 @@
+{
+  "name": "project-noverna",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "resources/**"
+  ],
+  "scripts": {
+    "build": "bun run --filter '*' build",
+    "build:all": "bun run --filter './resources/**' build",
+    "build:core": "bun run --filter '@noverna/core' build",
+    "dev": "bun run --filter '*' dev",
+    "clean": "rm -rf **/node_modules **/dist",
+    "install:all": "bun install"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^22.19.1",
+    "bun-types": "latest",
+    "typescript": "^5.3.0",
+    "@citizenfx/server": "^2.0.22253-1",
+    "@citizenfx/client": "^2.0.22253-1"
+  },
+  "dependencies": {
+    "@biomejs/biome": "^2.3.5"
+  }
+}

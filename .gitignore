@@ -1,0 +1,43 @@
+.env
+.env.local
+.env.*.local
+
+node_modules/
+dist/
+**/dist/
+
+.DS_Store
+Thumbs.db
+noverna.cfg
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor / OS
+.vscode/
+.history/
+Desktop.ini
+
+# TypeScript
+*.tsbuildinfo
+
+# Build outputs
+build/
+**/build/
+resources/**/build/
+
+# FiveM cache (already at repo root)
+cache/
+**/cache/**
+
+# Test & coverage
+coverage/
+.nyc_output/
+
+# Biome (if cache dir gets created)
+.biome/

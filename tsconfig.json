@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "files": [],
+  "references": [
+    { "path": "./packages/" },
+    { "path": "./resources/noverna-database/typescript" },
+    { "path": "./resources/noverna-cache/typescript" },
+    { "path": "./resources/noverna-core/server" }
+  ]
+}
